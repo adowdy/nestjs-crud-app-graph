@@ -36,5 +36,5 @@ export class UserController {
   @Get('/dist/:startId/:destId')
   getRelationDistance(@Param('startId') startId: string, @Param('destId') destId: string): number {
   return this.userService.getRelationDistance(parseInt(startId), parseInt(destId));
-}
+  }
 }
