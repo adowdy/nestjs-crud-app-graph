@@ -25,6 +25,18 @@
 ## Description
 Crud App Example with Users! Users have relations.
 
+Notes: 
+- I installed nvm, targeted node 16.16.x, 
+- followed hello world process for nest.js project
+- utilized nest cli to generate user resource `nest g resource users`
+- crud stubs, filled in with a basic JSON file stand in for an ORM interface/DB
+- containerized the test app using Dockerfile
+- wrote dumb script to mount my source into container for hot reload
+- proceeded to adjust user controller (http interface) -> user service (biz logic)
+- installed "Thunder client" to do some really basic testing via localhost:3000 http
+- extra testing focused around `user.controller.ts` -> `@Get('/dist/:startId/:destId')` to implement 'distance'
+
+
 The rest of this is a boilerplate README from nest.js project initialization
 ---
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
